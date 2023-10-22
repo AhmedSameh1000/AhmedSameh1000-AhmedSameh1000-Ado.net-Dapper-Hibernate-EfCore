@@ -1,12 +1,10 @@
 ﻿using EfCore1.Model;
 using Microsoft.Extensions.Configuration;
 using NHibernate;
-using NHibernate.Cfg;
 using NHibernate.Cfg.MappingSchema;
 using NHibernate.Dialect;
 using NHibernate.Driver;
 using NHibernate.Mapping.ByCode;
-using System.Configuration;
 using Configuration = NHibernate.Cfg.Configuration;
 
 namespace EfCore3

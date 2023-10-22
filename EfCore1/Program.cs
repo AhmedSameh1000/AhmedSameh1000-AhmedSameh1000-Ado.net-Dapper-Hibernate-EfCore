@@ -11,9 +11,7 @@ namespace EfCore1
 		static void Main(string[] args)
 		{
 
-			SendCashV2(2, 1, 5000);
-			GetWallets().Print();
-
+	
 
 		}
 
@@ -60,6 +58,10 @@ namespace EfCore1
 
 			return Wallets;
 		}
+
+
+
+	
 		public static void Insert(Wallet wallet)
 		{
 			
