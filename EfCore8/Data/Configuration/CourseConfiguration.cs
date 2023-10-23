@@ -39,5 +39,7 @@ namespace EfCore8.Data.Configuration
 				new Course{Id=5,CourseName="Cs-50",Price=3000}
 			};
 		}
-	}
+	}	
+
+
 }

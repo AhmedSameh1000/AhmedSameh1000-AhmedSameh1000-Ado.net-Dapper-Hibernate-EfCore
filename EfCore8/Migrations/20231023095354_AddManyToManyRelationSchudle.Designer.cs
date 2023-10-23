@@ -4,6 +4,7 @@ using EfCore8.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EfCore8.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231023095354_AddManyToManyRelationSchudle")]
+    partial class AddManyToManyRelationSchudle
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -70,73 +73,6 @@ namespace EfCore8.Migrations
                             Id = 5,
                             CourseName = "Cs-50",
                             Price = 3000m
-                        });
-                });
-
-            modelBuilder.Entity("EfCore8.Entities.EnrollMents", b =>
-                {
-                    b.Property<int>("StudentId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SectionId")
-                        .HasColumnType("int");
-
-                    b.HasKey("StudentId", "SectionId");
-
-                    b.HasIndex("SectionId");
-
-                    b.ToTable("EnrollMents");
-
-                    b.HasData(
-                        new
-                        {
-                            StudentId = 1,
-                            SectionId = 1
-                        },
-                        new
-                        {
-                            StudentId = 2,
-                            SectionId = 1
-                        },
-                        new
-                        {
-                            StudentId = 3,
-                            SectionId = 2
-                        },
-                        new
-                        {
-                            StudentId = 4,
-                            SectionId = 2
-                        },
-                        new
-                        {
-                            StudentId = 5,
-                            SectionId = 3
-                        },
-                        new
-                        {
-                            StudentId = 6,
-                            SectionId = 3
-                        },
-                        new
-                        {
-                            StudentId = 7,
-                            SectionId = 4
-                        },
-                        new
-                        {
-                            StudentId = 8,
-                            SectionId = 4
-                        },
-                        new
-                        {
-                            StudentId = 9,
-                            SectionId = 5
-                        },
-                        new
-                        {
-                            StudentId = 10,
-                            SectionId = 5
                         });
                 });
 
@@ -366,7 +302,7 @@ namespace EfCore8.Migrations
 
                     b.HasIndex("InstructorId");
 
-                    b.ToTable("Sections");
+                    b.ToTable("Section");
 
                     b.HasData(
                         new
@@ -471,7 +407,7 @@ namespace EfCore8.Migrations
 
                     b.HasIndex("SectionId");
 
-                    b.ToTable("SectionSchedules");
+                    b.ToTable("SectionSchedule");
 
                     b.HasData(
                         new
@@ -562,92 +498,6 @@ namespace EfCore8.Migrations
                             SectionId = 11,
                             StartTime = new TimeSpan(0, 9, 0, 0, 0)
                         });
-                });
-
-            modelBuilder.Entity("EfCore8.Entities.Student", b =>
-                {
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(255)
-                        .HasColumnType("varchar");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Students");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Fatima Ali"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Noor Salah"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Omar Yousef"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Huda Ahmed"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Amira Tareq"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Name = "Zinab Ismaeal"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Name = "Yousef Farid"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Name = "Layla Mostafa"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Name = "Mohamed Adel"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            Name = "Samira Nabil"
-                        });
-                });
-
-            modelBuilder.Entity("EfCore8.Entities.EnrollMents", b =>
-                {
-                    b.HasOne("EfCore8.Entities.Section", "Section")
-                        .WithMany()
-                        .HasForeignKey("SectionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EfCore8.Entities.Student", "Student")
-                        .WithMany()
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Section");
-
-                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("EfCore8.Entities.Instructor", b =>

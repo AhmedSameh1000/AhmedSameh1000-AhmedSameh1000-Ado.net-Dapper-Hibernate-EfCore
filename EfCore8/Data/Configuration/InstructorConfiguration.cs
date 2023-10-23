@@ -1,6 +1,7 @@
 ﻿using EfCore8.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
 namespace EfCore8.Data.Configuration
 {
 	public class InstructorConfiguration : IEntityTypeConfiguration<Instructor>
@@ -15,6 +16,11 @@ namespace EfCore8.Data.Configuration
 				.HasMaxLength(255)
 				.IsRequired();
 
+			builder.HasOne(c => c.Office)
+				.WithOne(c => c.Instructor)
+				.HasForeignKey<Instructor>(c => c.OfficeId)
+				.IsRequired(false);
+
 			builder.HasData(LoadCourses());
 
 		}
@@ -23,12 +29,13 @@ namespace EfCore8.Data.Configuration
 		{
 			return new List<Instructor>()
 			{
-				new Instructor{Id=1,Name="Ahmed AbdAllah"},
-				new Instructor{Id=2,Name="Yasmeen Mohamed"},
-				new Instructor{Id=3,Name="Khaled Hassan"},
-				new Instructor{Id=4,Name="Nadia Ali"},
-				new Instructor{Id=5,Name="Omar Ibrahim"},
+				new Instructor{Id=1,Name="Ahmed AbdAllah",OfficeId=1},
+				new Instructor{Id=2,Name="Yasmeen Mohamed",OfficeId=2},
+				new Instructor{Id=3,Name="Khaled Hassan",OfficeId=3},
+				new Instructor{Id=4,Name="Nadia Ali", OfficeId = 4},
+				new Instructor{Id=5,Name="Omar Ibrahim", OfficeId = 5},
 			};
 		}
-	}
+	}	
 }
+ 
