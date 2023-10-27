@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pRUOe9CpJPtvdIolW4hjX/vAf7jxBph3mBFWBaEFXccFy8BCDiILwk/oxXDYDOMi1haurYgQYEP2/38MSI5wdA==",
+  "dgSpecHash": "hu35PKuVpUGyw+t9hD36+uY3dVY+A32ynhc1qV+/89oMdJpMsJBCAm2Ar5YtWSwBu88e1lt8JcIAm+82cUSZSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\EfCore\\EfCore1\\EfCore1\\EfCore1.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Projects\\AhmedSameh1000-AhmedSameh1000-Ado.net-Dapper-Hibernate-EfCore\\EfCore1\\EfCore1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

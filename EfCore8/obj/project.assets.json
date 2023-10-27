@@ -3177,11 +3177,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\EfCore\\EfCore1\\EfCore8\\EfCore8.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Projects\\AhmedSameh1000-AhmedSameh1000-Ado.net-Dapper-Hibernate-EfCore\\EfCore8\\EfCore8.csproj",
       "projectName": "EfCore8",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\EfCore\\EfCore1\\EfCore8\\EfCore8.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\Projects\\AhmedSameh1000-AhmedSameh1000-Ado.net-Dapper-Hibernate-EfCore\\EfCore8\\EfCore8.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\EfCore\\EfCore1\\EfCore8\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\Projects\\AhmedSameh1000-AhmedSameh1000-Ado.net-Dapper-Hibernate-EfCore\\EfCore8\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3245,7 +3245,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
