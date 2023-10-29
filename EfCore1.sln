@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore14", "EfCore14\EfCore
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore15", "EfCore15\EfCore15.csproj", "{892D8371-EDB6-4A2F-B10D-410D552EA6E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCore16", "EfCore16\EfCore16.csproj", "{769F0E6F-817F-4ACA-91A5-D854E44ADB32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{892D8371-EDB6-4A2F-B10D-410D552EA6E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{892D8371-EDB6-4A2F-B10D-410D552EA6E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{892D8371-EDB6-4A2F-B10D-410D552EA6E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{769F0E6F-817F-4ACA-91A5-D854E44ADB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{769F0E6F-817F-4ACA-91A5-D854E44ADB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{769F0E6F-817F-4ACA-91A5-D854E44ADB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{769F0E6F-817F-4ACA-91A5-D854E44ADB32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
