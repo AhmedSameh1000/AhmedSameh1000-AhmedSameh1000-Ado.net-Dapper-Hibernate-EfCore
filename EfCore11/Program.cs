@@ -259,6 +259,7 @@ namespace EfCore11
         }
         public static void Methode8()
         {
+            //paging
             using (var context = new AppDbContext())
             {
                 var pageNum = 1;
